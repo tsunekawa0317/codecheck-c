@@ -9,7 +9,7 @@ int main(void)
   if(moji[0]=='\n'){
     printf("Hello!");
   }
-  else{
+  else if((moji[0]=='W') || (moji[0]=='c')){
   printf("Hello %s",moji);
   }
     
