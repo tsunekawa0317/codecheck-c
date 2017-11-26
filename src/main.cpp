@@ -1,11 +1,17 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-int main(int argc, char *argv[])
+int main(void)
 {
-  // start from 1 to ignore script name; argv[0] will be a name of processing file.
-  for (int i = 1; i < argc; i++) {
-    printf ("argv[%i]: %s\n", i, argv[i]);
+  char moji[256];
+  
+  printf("Enter a word,prefering 'World', '織田信長', or 'codecheck'.");  
+  fgets(moji,256,stdin);
+  if(moji[0]=="\n"){
+    printf("Hello!");
   }
+  else{
+  printf("Hello %s",moji);
+  }
+    
   return 0;
 }
