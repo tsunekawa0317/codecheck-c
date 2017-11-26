@@ -3,13 +3,17 @@
 int main(void)
 {
   char moji[256];
+  int len;
   
   printf("Enter a word,prefering 'World', '織田信長', or 'codecheck'.");  
   fgets(moji,256,stdin);
-  if(moji[0]=='\n'){
+  
+  len=strlen(moji)-1;
+  
+  if(len==0){
     printf("Hello!");
   }
-  else if((moji[0]=='W') || (moji[0]=='c')){
+  else{
   printf("Hello %s",moji);
   }
     
