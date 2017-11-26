@@ -6,7 +6,7 @@ int main(void)
   
   printf("Enter a word,prefering 'World', '織田信長', or 'codecheck'.");  
   fgets(moji,256,stdin);
-  if(moji[0]=="\n"){
+  if(moji[0]=='\n'){
     printf("Hello!");
   }
   else{
